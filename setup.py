@@ -2,7 +2,7 @@ from setuptools import setup
 import os
 from glob import glob
 
-package_name = 'mypkg'
+package_name = 'japanese_stockprice'
 
 setup(
     name=package_name,
@@ -23,8 +23,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'talker = mypkg.talker:main',
-            'listener = mypkg.listener:main',
+            'japanese_stockprice = mypkg.japanese_stockprice:main',
         ],
     },
 )
