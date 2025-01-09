@@ -3,12 +3,12 @@ from rclpy.node import Node
 import yfinance as yf
 from std_msgs.msg import String
 
-class StockPricePublisher(Node):
+class JapaneseStockPrice(Node):
     def __init__(self):
-        super().__init__('stock_price_publisher')
+        super().__init__('japanese_stockprice')
         self.publisher_ = self.create_publisher(String, 'stock_price_topic', 10)
         self.timer = self.create_timer(10, self.timer_callback)  # 10秒ごとに株価を更新
-        self.get_logger().info("Stock Price Publisher has started.")
+        self.get_logger().info("Japanese Stock Price has started.")
     
     def timer_callback(self):
         # 日本の株式市場の株価を取得（例えば、日経平均）
@@ -25,7 +25,7 @@ class StockPricePublisher(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    node = StockPricePublisher()
+    node = JapaneseStockPrice()
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()
