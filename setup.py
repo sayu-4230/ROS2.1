@@ -20,12 +20,10 @@ setup(
     maintainer_email='s23C1101EC@s.chibakoudai.jp',
     description='a package for practice',
     license='BSD-3-Clause',
-    <exec_depend>rclpy</exec_depend>            
-    <exec_depend>std_msgs</exec_depend>
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'japanese_stockprice = mypkg.japanese_stockprice:main',
+            'japanese_stockprice = japanese_stockprice.japanese_stockprice:main',
         ],
     },
 )
