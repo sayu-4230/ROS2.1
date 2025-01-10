@@ -2,7 +2,7 @@ from setuptools import setup
 import os
 from glob import glob
 
-package_name = 'japanese_stockprice'
+package_name = 'jst_gmt'
 
 setup(
     name=package_name,
@@ -23,7 +23,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'japanese_stockprice = japanese_stockprice.japanese_stockprice:main',
+            'jst_gmt = jst_gmt.jst_gmt:main',
         ],
     },
 )
