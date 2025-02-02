@@ -2,7 +2,7 @@ from setuptools import setup
 import os
 from glob import glob
 
-package_name = 'mypkg'
+package_name = 'network_usage'
 
 setup(
     name=package_name,
@@ -23,8 +23,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'talker = mypkg.talker:main',
-            'listener = mypkg.listener:main',
+            'talker = network_usage.network_usage:main',
+            'listener = network_usage.listener:main',
         ],
     },
 )

@@ -7,13 +7,13 @@ import launch_ros.actions
 def generate_launch_description():
 
     talker = launch_ros.actions.Node(
-        package='mypkg',
-        executable='talker',
+        package='network_usage',
+        executable='network_usage',
         )
     listener = launch_ros.actions.Node(
-        package='mypkg',
+        package='network_usage',
         executable='listener',
         output='screen'
         )
 
-    return launch.LaunchDescription([talker, listener])
+    return launch.LaunchDescription([network_usage, listener])
