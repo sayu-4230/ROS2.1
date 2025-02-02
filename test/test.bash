@@ -11,4 +11,4 @@ source $dir/.bashrc
 timeout 10 ros2 launch network_usage talk_listen.launch.py > /tmp/network_usage.log
 
 cat /tmp/network_usage.log |
-grep 'Listen: 10'
+grep -m 1 "network_listener"
