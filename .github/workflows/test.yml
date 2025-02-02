@@ -9,5 +9,10 @@ jobs:
     - name: build and test
       run: |
         rsync -av ./ /root/ros2_ws/src/mypkg/
+        sudo apt update
+        sudo apt install -y python3-colcon-common-extensions
+        sudo apt install -y curl gnupg2 lsb-release
+        curl -sSL https://raw.githubusercontent.com/ros2/ros2/master/ros2.repos | vcs import --recursive
+        source /opt/ros/foxy/setup.bash
         cd /root/ros2_ws
         bash -xv ./src/mypkg/test/test.bash/root
