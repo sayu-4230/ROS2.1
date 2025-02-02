@@ -12,4 +12,4 @@ jobs:
         cd /root/ros2_ws
         rosdep update
         rosdep install -i --from-path src --rosdistro foxy -y
-        bash -xv ./src/network_usage/test/test.bash/root
+        bash -xv ./src/network_usage/test/test.bash /root
