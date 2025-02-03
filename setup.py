@@ -23,7 +23,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'talker = network_usage.network_usage:main',
+            'network_usage = network_usage.network_usage:main',
             'listener = network_usage.listener:main',
         ],
     },
