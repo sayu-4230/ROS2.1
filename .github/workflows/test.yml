@@ -12,6 +12,6 @@ jobs:
         cd /root/ros2_ws
         sudo rosdep fix-permissions
         rosdep update
-        sudo apt-get install -y ros-foxy-launch
+        sudo apt-get install -y ros-foxy-launch-ros
         rosdep install -i --from-path src --ignore-src -r -y --rosdistro foxy
         bash -xv ./src/network_usage/test/test.bash /root
