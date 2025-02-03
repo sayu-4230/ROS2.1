@@ -6,7 +6,7 @@ import launch_ros.actions
 
 def generate_launch_description():
 
-    talker = launch_ros.actions.Node(
+    network_usage = launch_ros.actions.Node(
         package='network_usage',
         executable='network_usage',
         )
