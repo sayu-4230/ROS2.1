@@ -18,7 +18,7 @@ class NetworkUsagePublisher(Node):
         msg.data = float(sent_bytes + recv_bytes)
         self.pub.publish(msg)
 
-        self.get_logger().info(f"Network Usage: {sent_bytes + recv_bytes} bytes")
+        self.get_logger().info(f"network_usage: {sent_bytes + recv_bytes} bytes")
 
 def main():
     rclpy.init()

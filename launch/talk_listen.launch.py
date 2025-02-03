@@ -8,7 +8,7 @@ def generate_launch_description():
 
     network_usage = launch_ros.actions.Node(
         package='network_usage',
-        executable='network_usage',
+        executable='network_usage_pub',
         )
     listener = launch_ros.actions.Node(
         package='network_usage',
@@ -16,4 +16,4 @@ def generate_launch_description():
         output='screen'
         )
 
-    return launch.LaunchDescription([network_usage, listener])
+    return launch.LaunchDescription([network_usage_pub, listener])

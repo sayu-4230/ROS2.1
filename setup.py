@@ -5,7 +5,7 @@ from glob import glob
 package_name = 'network_usage'
 
 setup(
-    name=package_name,
+    name='network_usage',
     version='0.0.0',
     packages=[package_name],
     data_files=[
@@ -23,7 +23,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'network_usage = network_usage.network_usage:main',
+            'network_usage_pub = network_usage.network_usage_pub:main',
             'listener = network_usage.listener:main',
         ],
     },

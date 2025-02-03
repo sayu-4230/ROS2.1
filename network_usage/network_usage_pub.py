@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2025 Yuki Nishijima
+# SPDX-License-Identifier: BSD-3-Clause
+
 import psutil
 import rclpy
 from rclpy.node import Node
