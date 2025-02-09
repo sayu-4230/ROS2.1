@@ -4,7 +4,7 @@
   <name>network_usage</name>
   <version>0.0.0</version>
   <description>a package for practice</description>
-  <maintainer email="s23C1101EC@s.chibakoudai.jp">Yuki</maintainer>
+  <maintainer email="s23C1101EC@s.chibakoudai.jp">Yuki Nishijima</maintainer>
   <license>BSD-3-Clause</license>
   <exec_depend>rclpy</exec_depend>
   <exec_depend>std_msgs</exec_depend>

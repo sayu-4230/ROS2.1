@@ -10,8 +10,6 @@ jobs:
       run: |
         rsync -av ./ /root/ros2_ws/src/network_usage/
         cd /root/ros2_ws
-        sudo rosdep fix-permissions
         rosdep update
-        sudo apt-get install -y ros-foxy-launch
-        rosdep install -i --from-path src --ignore-src -r -y --rosdistro foxy
+        rosdep install -i --from-path src -y --rosdistro foxy
         bash -xv ./src/network_usage/test/test.bash /root

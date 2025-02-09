@@ -16,7 +16,7 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='yuki',
+    maintainer='yuki Nishijima',
     maintainer_email='s23C1101EC@s.chibakoudai.jp',
     description='a package for practice',
     license='BSD-3-Clause',
